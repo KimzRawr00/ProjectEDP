@@ -21,5 +21,10 @@ namespace ProjectEDP
         {
 
         }
+
+        private void labelTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
