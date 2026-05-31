@@ -36,9 +36,17 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panelEmail = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panelPassword = new System.Windows.Forms.Panel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panelPhoneNumber = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btnCreateAccount = new System.Windows.Forms.Button();
             this.panelFirstName.SuspendLayout();
             this.panelLastName.SuspendLayout();
             this.panelEmail.SuspendLayout();
+            this.panelPassword.SuspendLayout();
+            this.panelPhoneNumber.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -56,15 +64,16 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button1.Location = new System.Drawing.Point(495, 30);
+            this.button1.Location = new System.Drawing.Point(490, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 44);
+            this.button1.Size = new System.Drawing.Size(30, 30);
             this.button1.TabIndex = 1;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // panelFirstName
             // 
+            this.panelFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFirstName.Controls.Add(this.textBox1);
             this.panelFirstName.Location = new System.Drawing.Point(30, 85);
             this.panelFirstName.Name = "panelFirstName";
@@ -79,11 +88,12 @@
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(466, 25);
+            this.textBox1.Size = new System.Drawing.Size(464, 25);
             this.textBox1.TabIndex = 0;
             // 
             // panelLastName
             // 
+            this.panelLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLastName.Controls.Add(this.textBox2);
             this.panelLastName.Location = new System.Drawing.Point(30, 145);
             this.panelLastName.Name = "panelLastName";
@@ -98,11 +108,12 @@
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.textBox2.Location = new System.Drawing.Point(12, 12);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(466, 25);
+            this.textBox2.Size = new System.Drawing.Size(464, 25);
             this.textBox2.TabIndex = 0;
             // 
             // panelEmail
             // 
+            this.panelEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelEmail.Controls.Add(this.textBox3);
             this.panelEmail.Location = new System.Drawing.Point(30, 205);
             this.panelEmail.Name = "panelEmail";
@@ -117,15 +128,78 @@
             this.textBox3.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.textBox3.Location = new System.Drawing.Point(12, 12);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(466, 25);
+            this.textBox3.Size = new System.Drawing.Size(464, 25);
             this.textBox3.TabIndex = 0;
+            // 
+            // panelPassword
+            // 
+            this.panelPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPassword.Controls.Add(this.textBox4);
+            this.panelPassword.Location = new System.Drawing.Point(30, 326);
+            this.panelPassword.Name = "panelPassword";
+            this.panelPassword.Padding = new System.Windows.Forms.Padding(12);
+            this.panelPassword.Size = new System.Drawing.Size(490, 45);
+            this.panelPassword.TabIndex = 2;
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.textBox4.Location = new System.Drawing.Point(12, 12);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(464, 25);
+            this.textBox4.TabIndex = 0;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(30, 398);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(253, 20);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "I agree to receive SMS for verification.";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panelPhoneNumber
+            // 
+            this.panelPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPhoneNumber.Controls.Add(this.textBox5);
+            this.panelPhoneNumber.Location = new System.Drawing.Point(30, 265);
+            this.panelPhoneNumber.Name = "panelPhoneNumber";
+            this.panelPhoneNumber.Padding = new System.Windows.Forms.Padding(12);
+            this.panelPhoneNumber.Size = new System.Drawing.Size(490, 45);
+            this.panelPhoneNumber.TabIndex = 2;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.textBox5.Location = new System.Drawing.Point(12, 12);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(464, 25);
+            this.textBox5.TabIndex = 0;
+            // 
+            // btnCreateAccount
+            // 
+            this.btnCreateAccount.Location = new System.Drawing.Point(30, 437);
+            this.btnCreateAccount.Name = "btnCreateAccount";
+            this.btnCreateAccount.Size = new System.Drawing.Size(490, 45);
+            this.btnCreateAccount.TabIndex = 4;
+            this.btnCreateAccount.Text = "button2";
+            this.btnCreateAccount.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(550, 420);
+            this.ClientSize = new System.Drawing.Size(550, 520);
+            this.Controls.Add(this.btnCreateAccount);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.panelPassword);
+            this.Controls.Add(this.panelPhoneNumber);
             this.Controls.Add(this.panelEmail);
             this.Controls.Add(this.panelLastName);
             this.Controls.Add(this.panelFirstName);
@@ -142,6 +216,10 @@
             this.panelLastName.PerformLayout();
             this.panelEmail.ResumeLayout(false);
             this.panelEmail.PerformLayout();
+            this.panelPassword.ResumeLayout(false);
+            this.panelPassword.PerformLayout();
+            this.panelPhoneNumber.ResumeLayout(false);
+            this.panelPhoneNumber.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +235,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panelEmail;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panelPassword;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panelPhoneNumber;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button btnCreateAccount;
     }
 }
