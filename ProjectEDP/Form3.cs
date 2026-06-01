@@ -16,5 +16,10 @@ namespace ProjectEDP
         {
             InitializeComponent();
         }
+
+        private void lblDesc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

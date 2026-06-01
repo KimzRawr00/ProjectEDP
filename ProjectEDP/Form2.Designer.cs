@@ -70,6 +70,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelFirstName
             // 
@@ -187,7 +188,7 @@
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(490, 45);
             this.btnCreateAccount.TabIndex = 4;
-            this.btnCreateAccount.Text = "button2";
+            this.btnCreateAccount.Text = "Create";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
             // 
             // Form2

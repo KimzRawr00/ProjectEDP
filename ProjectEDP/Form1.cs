@@ -78,13 +78,21 @@ namespace ProjectEDP
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            Form3 dashboardForm = new Form3();
+            this.Hide();
+            dashboardForm.ShowDialog();
+            this.Close();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form2 secondForm = new Form2();
             secondForm.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
