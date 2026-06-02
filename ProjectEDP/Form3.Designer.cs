@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panelNav = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelHero = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,19 +40,21 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblMatch = new System.Windows.Forms.Label();
             this.btnBuy = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.dgvMatches = new System.Windows.Forms.DataGridView();
             this.MatchName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatchDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Venue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNav.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHero.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelNav
@@ -68,14 +68,6 @@
             this.panelNav.Size = new System.Drawing.Size(1188, 82);
             this.panelNav.TabIndex = 0;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(32, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(72, 50);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -85,16 +77,6 @@
             this.label1.Size = new System.Drawing.Size(353, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Football Ticket Booking System";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProjectEDP.Properties.Resources._6522516;
-            this.pictureBox1.Location = new System.Drawing.Point(1083, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // panelHero
             // 
@@ -201,16 +183,6 @@
             this.btnBuy.UseVisualStyleBackColor = true;
             this.btnBuy.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ProjectEDP.Properties.Resources.caption;
-            this.pictureBox3.Location = new System.Drawing.Point(47, 33);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(401, 308);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // dgvMatches
             // 
             this.dgvMatches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -255,13 +227,43 @@
             this.Price.Name = "Price";
             this.Price.Width = 125;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ProjectEDP.Properties.Resources.caption;
+            this.pictureBox3.Location = new System.Drawing.Point(47, 33);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(401, 308);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProjectEDP.Properties.Resources._7f9d5a72c26327b96e3920b653fab83e;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjectEDP.Properties.Resources._6522516;
+            this.pictureBox1.Location = new System.Drawing.Point(1083, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1182, 1030);
+            this.ClientSize = new System.Drawing.Size(1182, 942);
             this.Controls.Add(this.dgvMatches);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHero);
@@ -271,14 +273,14 @@
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panelNav.ResumeLayout(false);
             this.panelNav.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHero.ResumeLayout(false);
             this.panelHero.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

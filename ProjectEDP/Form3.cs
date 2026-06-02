@@ -17,26 +17,26 @@ namespace ProjectEDP
 
         string[] matches =
         {
-    "JDT vs Kuching City",
-    "Selangor vs Terengganu",
-    "Sabah vs Kedah",
-    "Penang vs Negeri Sembilan"
+            "JDT vs Kuching City",
+            "Selangor vs Terengganu",
+            "Sabah vs Kedah",
+            "Penang vs Negeri Sembilan"
 };
 
         string[] dates =
         {
-    "25/10/2026",
-    "01/11/2026",
-    "05/11/2026",
-    "08/11/2026"
+            "25/10/2026",
+            "01/11/2026",
+            "05/11/2026",
+            "08/11/2026"
 };
 
         string[] venues =
         {
-    "Sultan Ibrahim Stadium",
-    "MBPJ Stadium",
-    "Likas Stadium",
-    "Penang Stadium"
+            "Sultan Ibrahim Stadium",
+            "MBPJ Stadium",
+            "Likas Stadium",
+            "Penang Stadium"
 };
 
         string[] prices =

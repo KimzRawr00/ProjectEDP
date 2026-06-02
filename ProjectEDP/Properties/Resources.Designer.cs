@@ -73,6 +73,16 @@ namespace ProjectEDP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _7f9d5a72c26327b96e3920b653fab83e {
+            get {
+                object obj = ResourceManager.GetObject("7f9d5a72c26327b96e3920b653fab83e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caption {
             get {
                 object obj = ResourceManager.GetObject("caption", resourceCulture);
