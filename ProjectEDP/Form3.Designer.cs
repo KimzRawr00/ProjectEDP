@@ -45,6 +45,7 @@
             this.MatchDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Venue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,6 +53,7 @@
             this.panelHero.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +65,7 @@
             this.panelNav.Controls.Add(this.pictureBox2);
             this.panelNav.Controls.Add(this.label1);
             this.panelNav.Controls.Add(this.pictureBox1);
-            this.panelNav.Location = new System.Drawing.Point(0, 0);
+            this.panelNav.Location = new System.Drawing.Point(14, 25);
             this.panelNav.Name = "panelNav";
             this.panelNav.Size = new System.Drawing.Size(1188, 82);
             this.panelNav.TabIndex = 0;
@@ -82,7 +84,7 @@
             // 
             this.panelHero.BackColor = System.Drawing.Color.Gainsboro;
             this.panelHero.Controls.Add(this.label3);
-            this.panelHero.Location = new System.Drawing.Point(3, 122);
+            this.panelHero.Location = new System.Drawing.Point(14, 135);
             this.panelHero.Name = "panelHero";
             this.panelHero.Size = new System.Drawing.Size(1188, 71);
             this.panelHero.TabIndex = 4;
@@ -99,6 +101,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.btnPrevious);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.lblVenue);
@@ -107,18 +110,18 @@
             this.panel1.Controls.Add(this.lblMatch);
             this.panel1.Controls.Add(this.btnBuy);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(3, 229);
+            this.panel1.Location = new System.Drawing.Point(14, 230);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1188, 380);
             this.panel1.TabIndex = 8;
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(559, 296);
+            this.btnPrevious.Location = new System.Drawing.Point(533, 296);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(123, 45);
             this.btnPrevious.TabIndex = 5;
-            this.btnPrevious.Text = "button1";
+            this.btnPrevious.Text = "Prev";
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
@@ -191,7 +194,7 @@
             this.MatchDate,
             this.Venue,
             this.Price});
-            this.dgvMatches.Location = new System.Drawing.Point(241, 669);
+            this.dgvMatches.Location = new System.Drawing.Point(238, 35);
             this.dgvMatches.Name = "dgvMatches";
             this.dgvMatches.RowHeadersWidth = 51;
             this.dgvMatches.RowTemplate.Height = 24;
@@ -227,9 +230,18 @@
             this.Price.Name = "Price";
             this.Price.Width = 125;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.dgvMatches);
+            this.panel2.Location = new System.Drawing.Point(14, 643);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1185, 262);
+            this.panel2.TabIndex = 9;
+            // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::ProjectEDP.Properties.Resources.caption;
+            this.pictureBox3.Image = global::ProjectEDP.Properties.Resources.Penang;
             this.pictureBox3.Location = new System.Drawing.Point(47, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(401, 308);
@@ -263,8 +275,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1182, 942);
-            this.Controls.Add(this.dgvMatches);
+            this.ClientSize = new System.Drawing.Size(1224, 639);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHero);
             this.Controls.Add(this.panelNav);
@@ -278,6 +290,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -307,5 +320,6 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Panel panel2;
     }
 }

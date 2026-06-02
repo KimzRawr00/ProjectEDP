@@ -41,11 +41,13 @@ namespace ProjectEDP
 
         string[] prices =
         {
-    "RM350",
-    "RM120",
-    "RM90",
-    "RM80"
+            "RM50",
+            "RM40",
+            "RM30",
+            "RM34"
 };
+
+        
         private void ShowMatch()
         {
             lblMatch.Text = matches[currentMatch];
