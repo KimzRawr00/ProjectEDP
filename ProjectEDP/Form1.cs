@@ -15,11 +15,19 @@ namespace ProjectEDP
         public Form1()
         {
             InitializeComponent();
-            btnLogin.FlatAppearance.BorderSize = 0;
+
+            if (btnLogin != null)
+            {
+                btnLogin.FlatStyle = FlatStyle.Flat;
+                btnLogin.FlatAppearance.BorderSize = 0;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (DesignMode)
+                return;
+
             txtEmail.Text = "Enter your email";
             txtEmail.ForeColor = Color.Gray;
 
