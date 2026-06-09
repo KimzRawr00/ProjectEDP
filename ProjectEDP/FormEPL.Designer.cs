@@ -248,7 +248,7 @@
             this.panel4.Controls.Add(this.gb4);
             this.panel4.Location = new System.Drawing.Point(12, 197);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(776, 464);
+            this.panel4.Size = new System.Drawing.Size(776, 576);
             this.panel4.TabIndex = 12;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -256,7 +256,7 @@
             // 
             this.rbASL.AutoSize = true;
             this.rbASL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbASL.Location = new System.Drawing.Point(0, 14);
+            this.rbASL.Location = new System.Drawing.Point(4, 14);
             this.rbASL.Name = "rbASL";
             this.rbASL.Size = new System.Drawing.Size(212, 24);
             this.rbASL.TabIndex = 8;
@@ -427,7 +427,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 732);
+            this.ClientSize = new System.Drawing.Size(800, 799);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
