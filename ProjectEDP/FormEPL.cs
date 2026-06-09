@@ -121,5 +121,10 @@ namespace ProjectEDP
         {
 
         }
+
+        private void picStadium_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

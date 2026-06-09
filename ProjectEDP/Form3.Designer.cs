@@ -57,7 +57,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ProjectEDP.Properties.Resources._7f9d5a72c26327b96e3920b653fab83e;
+            this.pictureBox2.Image = global::ProjectEDP.Properties.Resources.WhatsApp_Image_2026_06_09_at_1_02_38_PM;
             this.pictureBox2.Location = new System.Drawing.Point(19, 15);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
