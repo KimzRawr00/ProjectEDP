@@ -86,9 +86,9 @@ namespace ProjectEDP
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form3 dashboardForm = new Form3();
+            FormBuyTicket buyTicketForm = new FormBuyTicket();
             this.Hide();
-            dashboardForm.ShowDialog();
+            buyTicketForm.ShowDialog();
             this.Close();
         }
 
