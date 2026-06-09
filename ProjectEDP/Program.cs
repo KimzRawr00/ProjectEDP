@@ -16,7 +16,7 @@ namespace ProjectEDP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormEPL());
+            Application.Run(new Form3());
         }
     }
 }
