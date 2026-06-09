@@ -16,5 +16,23 @@ namespace ProjectEDP
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLog_Click(object sender, EventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
+
+            this.Close();
+        }
     }
 }
