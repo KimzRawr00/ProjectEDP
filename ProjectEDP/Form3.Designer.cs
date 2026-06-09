@@ -35,25 +35,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.lblVenue = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblMatch = new System.Windows.Forms.Label();
             this.btnBuy = new System.Windows.Forms.Button();
-            this.dgvMatches = new System.Windows.Forms.DataGridView();
-            this.MatchName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MatchDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Venue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelNav.SuspendLayout();
             this.panelHero.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,16 +79,16 @@
             // 
             this.panelHero.BackColor = System.Drawing.Color.Gainsboro;
             this.panelHero.Controls.Add(this.label3);
-            this.panelHero.Location = new System.Drawing.Point(14, 135);
+            this.panelHero.Location = new System.Drawing.Point(547, 135);
             this.panelHero.Name = "panelHero";
-            this.panelHero.Size = new System.Drawing.Size(1188, 71);
+            this.panelHero.Size = new System.Drawing.Size(655, 71);
             this.panelHero.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(498, 22);
+            this.label3.Location = new System.Drawing.Point(202, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(239, 31);
             this.label3.TabIndex = 0;
@@ -104,7 +99,6 @@
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.btnPrevious);
             this.panel1.Controls.Add(this.btnNext);
-            this.panel1.Controls.Add(this.lblVenue);
             this.panel1.Controls.Add(this.lblPrice);
             this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.lblMatch);
@@ -135,21 +129,11 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // lblVenue
-            // 
-            this.lblVenue.AutoSize = true;
-            this.lblVenue.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVenue.Location = new System.Drawing.Point(589, 153);
-            this.lblVenue.Name = "lblVenue";
-            this.lblVenue.Size = new System.Drawing.Size(81, 28);
-            this.lblVenue.TabIndex = 3;
-            this.lblVenue.Text = "Venue: ";
-            // 
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(589, 190);
+            this.lblPrice.Location = new System.Drawing.Point(591, 172);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(67, 28);
             this.lblPrice.TabIndex = 3;
@@ -159,7 +143,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(591, 116);
+            this.lblDate.Location = new System.Drawing.Point(591, 123);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(65, 28);
             this.lblDate.TabIndex = 3;
@@ -186,62 +170,36 @@
             this.btnBuy.UseVisualStyleBackColor = true;
             this.btnBuy.Click += new System.EventHandler(this.button2_Click);
             // 
-            // dgvMatches
-            // 
-            this.dgvMatches.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatches.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MatchName,
-            this.MatchDate,
-            this.Venue,
-            this.Price});
-            this.dgvMatches.Location = new System.Drawing.Point(238, 35);
-            this.dgvMatches.Name = "dgvMatches";
-            this.dgvMatches.RowHeadersWidth = 51;
-            this.dgvMatches.RowTemplate.Height = 24;
-            this.dgvMatches.Size = new System.Drawing.Size(701, 196);
-            this.dgvMatches.TabIndex = 3;
-            this.dgvMatches.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMatches_CellContentClick);
-            // 
-            // MatchName
-            // 
-            this.MatchName.HeaderText = "Match Name";
-            this.MatchName.MinimumWidth = 6;
-            this.MatchName.Name = "MatchName";
-            this.MatchName.Width = 125;
-            // 
-            // MatchDate
-            // 
-            this.MatchDate.HeaderText = "Date";
-            this.MatchDate.MinimumWidth = 6;
-            this.MatchDate.Name = "MatchDate";
-            this.MatchDate.Width = 125;
-            // 
-            // Venue
-            // 
-            this.Venue.HeaderText = "Venue";
-            this.Venue.MinimumWidth = 6;
-            this.Venue.Name = "Venue";
-            this.Venue.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.Width = 125;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.dgvMatches);
             this.panel2.Location = new System.Drawing.Point(14, 643);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1185, 262);
             this.panel2.TabIndex = 9;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(12, 24);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(394, 33);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.Text = "Choose Stadium";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Location = new System.Drawing.Point(14, 135);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(448, 71);
+            this.panel3.TabIndex = 4;
+            // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::ProjectEDP.Properties.Resources.Penang;
             this.pictureBox3.Location = new System.Drawing.Point(47, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(401, 308);
@@ -251,7 +209,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ProjectEDP.Properties.Resources._7f9d5a72c26327b96e3920b653fab83e;
+            this.pictureBox2.Image = global::ProjectEDP.Properties.Resources.WhatsApp_Image_2026_06_09_at_1_02_38_PM;
             this.pictureBox2.Location = new System.Drawing.Point(12, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(87, 55);
@@ -275,9 +233,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1224, 639);
+            this.ClientSize = new System.Drawing.Size(1287, 639);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelHero);
             this.Controls.Add(this.panelNav);
             this.Name = "Form3";
@@ -289,8 +248,7 @@
             this.panelHero.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMatches)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -309,17 +267,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnBuy;
-        private System.Windows.Forms.DataGridView dgvMatches;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MatchName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MatchDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Venue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.Label lblMatch;
-        private System.Windows.Forms.Label lblVenue;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

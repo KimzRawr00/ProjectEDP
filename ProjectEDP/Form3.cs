@@ -1,119 +1,202 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ProjectEDP
 {
-
     public partial class Form3 : Form
     {
-        private int currentMatch = 0;
+        private List<Stadium> stadiums = new List<Stadium>();
+        private Stadium selectedStadium = null;
+        private int currentMatchIndex = 0;
 
-        string[] matches =
-        {
-            "JDT vs Kuching City",
-            "Selangor vs Terengganu",
-            "Sabah vs Kedah",
-            "Penang vs Negeri Sembilan"
-};
-
-        string[] dates =
-        {
-            "25/10/2026",
-            "01/11/2026",
-            "05/11/2026",
-            "08/11/2026"
-};
-
-        string[] venues =
-        {
-            "Sultan Ibrahim Stadium",
-            "MBPJ Stadium",
-            "Likas Stadium",
-            "Penang Stadium"
-};
-
-        string[] prices =
-        {
-            "RM50",
-            "RM40",
-            "RM30",
-            "RM34"
-};
-
-        
-        private void ShowMatch()
-        {
-            lblMatch.Text = matches[currentMatch];
-            lblDate.Text = dates[currentMatch];
-            lblVenue.Text = venues[currentMatch];
-            lblPrice.Text = prices[currentMatch];
-            dgvMatches.ClearSelection();
-            if (currentMatch < dgvMatches.Rows.Count)
-            {
-                dgvMatches.ClearSelection();
-                dgvMatches.Rows[currentMatch].Selected = true;
-            }
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-            
-            dgvMatches.Rows.Add(matches[0], dates[0], venues[0], prices[0]);
-            dgvMatches.Rows.Add(matches[1], dates[1], venues[1], prices[1]);
-            dgvMatches.Rows.Add(matches[2], dates[2], venues[2], prices[2]);
-            dgvMatches.Rows.Add(matches[3], dates[3], venues[3], prices[3]);
-
-            ShowMatch();
-        }
         public Form3()
         {
             InitializeComponent();
         }
 
-        private void lblDesc_Click(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
-
+            LoadStadiumData();
+            PopulateComboBox();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void LoadStadiumData()
         {
-            
+            stadiums.Clear();
+
+            string downloads = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Downloads\";
+
+            string[] stadiumNames =
+            {
+        "Stadium Sultan Ibrahim",
+        "Stadium Tunku Abdul Rahman",
+        "Stadium Hang Jebat",
+        "Stadium Sarawak",
+        "Stadium MBPJ",
+        "Stadium Kuala Lumpur",
+        "Stadium Petaling Jaya",
+        "Stadium Sultan Mizan Zainal Abidin",
+        "Stadium Likas",
+        "Stadium Sultan Muhammad IV"
+    };
+
+            string[,] matches =
+            {
+        { "JDT vs Terengganu FC", "JDT vs Selangor FC", "JDT vs Sabah FC", "JDT vs Kedah FC" },
+        { "Negeri Sembilan vs Kedah", "Negeri Sembilan vs Perak", "Negeri Sembilan vs PDRM", "Negeri Sembilan vs Kelantan" },
+        { "Melaka FC vs Kelantan", "Melaka FC vs Penang", "Melaka FC vs KL City", "Melaka FC vs Pahang" },
+        { "Kuching City vs PDRM", "Kuching City vs Sabah FC", "Kuching City vs Perak", "Kuching City vs Kedah" },
+        { "PJ City vs Penang", "PJ City vs Kelantan", "PJ City vs Perak", "PJ City vs Sabah FC" },
+        { "KL City vs Sabah FC", "KL City vs JDT", "KL City vs Selangor FC", "KL City vs Terengganu FC" },
+        { "PJ Rangers vs UiTM FC", "PJ Rangers vs Kelantan", "PJ Rangers vs Melaka FC", "PJ Rangers vs PDRM" },
+        { "Terengganu FC vs Perak", "Terengganu FC vs JDT", "Terengganu FC vs Selangor FC", "Terengganu FC vs Kedah FC" },
+        { "Sabah FC vs Sarawak United", "Sabah FC vs KL City", "Sabah FC vs JDT", "Sabah FC vs Penang" },
+        { "Kelantan FC vs Pahang", "Kelantan FC vs Melaka FC", "Kelantan FC vs Perak", "Kelantan FC vs Negeri Sembilan" }
+    };
+
+            string[] dates =
+            {
+        "12 June 2026",
+        "20 June 2026",
+        "28 June 2026",
+        "5 July 2026"
+    };
+
+            string[] prices =
+            {
+        "RM20",
+        "RM30",
+        "RM40",
+        "RM50"
+    };
+
+            for (int i = 0; i < stadiumNames.Length; i++)
+            {
+                Stadium stadium = new Stadium
+                {
+                    Name = stadiumNames[i],
+                    ImagePath = downloads + stadiumNames[i] + ".jpg"
+                };
+
+                for (int j = 0; j < 4; j++)
+                {
+                    stadium.Matches.Add(new FootballMatch
+                    {
+                        MatchName = matches[i, j],
+                        Date = dates[j],
+                        Price = prices[j]
+                    });
+                }
+
+                stadiums.Add(stadium);
+            }
+        }
+
+        private void PopulateComboBox()
+        {
+            comboBox1.Items.Clear();
+
+            foreach (var s in stadiums)
+            {
+                comboBox1.Items.Add(s);
+            }
+
+            comboBox1.SelectedIndex = 0;
+        }
+
+        private void ShowMatch()
+        {
+            if (selectedStadium == null) return;
+
+            try
+            {
+                if (File.Exists(selectedStadium.ImagePath))
+                {
+                    if (pictureBox3.Image != null)
+                        pictureBox3.Image.Dispose();
+
+                    pictureBox3.Image = Image.FromFile(selectedStadium.ImagePath);
+                }
+                else
+                {
+                    pictureBox3.Image = null;
+                }
+            }
+            catch
+            {
+                pictureBox3.Image = null;
+            }
+
+            if (selectedStadium.Matches.Count > 0)
+            {
+                var match = selectedStadium.Matches[currentMatchIndex];
+
+                lblMatch.Text = match.MatchName;
+                lblDate.Text = match.Date;
+                lblPrice.Text = match.Price;
+
+                btnPrevious.Enabled = currentMatchIndex > 0;
+                btnNext.Enabled = currentMatchIndex < selectedStadium.Matches.Count - 1;
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectedStadium = (Stadium)comboBox1.SelectedItem;
+            currentMatchIndex = 0;
+            ShowMatch();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            currentMatch++;
-
-            if (currentMatch >= matches.Length)
+            if (currentMatchIndex < selectedStadium.Matches.Count - 1)
             {
-                currentMatch = 0;
+                currentMatchIndex++;
+                ShowMatch();
             }
-
-            ShowMatch();
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            currentMatch--;
-
-            if (currentMatch < 0)
+            if (currentMatchIndex > 0)
             {
-                currentMatch = matches.Length - 1;
+                currentMatchIndex--;
+                ShowMatch();
             }
-
-            ShowMatch();
         }
 
-        private void dgvMatches_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            var match = selectedStadium.Matches[currentMatchIndex];
 
+            MessageBox.Show(
+                "Ticket Purchased!\n\n" +
+                "Stadium: " + selectedStadium.Name + "\n" +
+                "Match: " + match.MatchName + "\n" +
+                "Date: " + match.Date + "\n" +
+                "Price: " + match.Price,
+                "Success",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
         }
+    }
+
+    public class FootballMatch
+    {
+        public string MatchName { get; set; }
+        public string Date { get; set; }
+        public string Price { get; set; }
+    }
+
+    public class Stadium
+    {
+        public string Name { get; set; }
+        public string ImagePath { get; set; }
+        public List<FootballMatch> Matches { get; set; } = new List<FootballMatch>();
+
+        public override string ToString() => Name;
     }
 }

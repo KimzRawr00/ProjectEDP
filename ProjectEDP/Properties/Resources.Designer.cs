@@ -119,5 +119,75 @@ namespace ProjectEDP.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_Hang_Jebat {
+            get {
+                object obj = ResourceManager.GetObject("Stadium Hang Jebat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_Kuala_Lumpur {
+            get {
+                object obj = ResourceManager.GetObject("Stadium Kuala Lumpur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_MBPJ {
+            get {
+                object obj = ResourceManager.GetObject("Stadium MBPJ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_Sarawak {
+            get {
+                object obj = ResourceManager.GetObject("Stadium Sarawak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_Sultan_Ibrahim {
+            get {
+                object obj = ResourceManager.GetObject("Stadium Sultan Ibrahim", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stadium_Tunku_Abdul_Rahman {
+            get {
+                object obj = ResourceManager.GetObject("Stadium Tunku Abdul Rahman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_06_09_at_1_02_38_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-06-09 at 1.02.38 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
