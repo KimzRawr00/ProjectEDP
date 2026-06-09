@@ -47,10 +47,10 @@ namespace ProjectEDP
 
             SqlCommand cmd = new SqlCommand(query, conn);
 
-            cmd.Parameters.AddWithValue("@name", txtName.Text);
-            cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
-            cmd.Parameters.AddWithValue("@email", txtEmail.Text);
-            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+            cmd.Parameters.AddWithValue("@name", textBox1.Text);
+            cmd.Parameters.AddWithValue("@phone", textBox2.Text);
+            cmd.Parameters.AddWithValue("@email", textBox3.Text);
+            cmd.Parameters.AddWithValue("@password", textBox4.Text);
 
             conn.Open();
             cmd.ExecuteNonQuery();
