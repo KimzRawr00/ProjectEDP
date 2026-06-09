@@ -162,6 +162,26 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\villa1.jpg" />
+    <None Include="Resources\totenhamjpg1.jpg" />
+    <None Include="Resources\stjamespark.jpg" />
+    <None Include="Resources\stamford1.jpg" />
+    <None Include="Resources\selhurst1.jpg" />
+    <None Include="Resources\Oldtrafford.jpg" />
+    <None Include="Resources\hill1.jpg" />
+    <None Include="Resources\etihad1.jpg" />
+    <None Include="Resources\emirates1.jpg" />
+    <None Include="Resources\Anfield1.jpg" />
+    <None Include="Resources\villa.jpg" />
+    <None Include="Resources\totenhamjpg.jpg" />
+    <None Include="Resources\stamford.jpg" />
+    <None Include="Resources\st james park.jpg" />
+    <None Include="Resources\selhurst.jpg" />
+    <None Include="Resources\Old trafford.jpg" />
+    <None Include="Resources\hill.jpg" />
+    <None Include="Resources\etihad.jpg" />
+    <None Include="Resources\emirates.jpg" />
+    <None Include="Resources\Anfield.jpg" />
     <None Include="Resources\Screenshot 2026-06-09 130228.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
