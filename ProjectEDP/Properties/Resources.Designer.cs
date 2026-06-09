@@ -63,9 +63,9 @@ namespace ProjectEDP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _6522516 {
+        internal static System.Drawing.Bitmap Argentina {
             get {
-                object obj = ResourceManager.GetObject("6522516", resourceCulture);
+                object obj = ResourceManager.GetObject("Argentina", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

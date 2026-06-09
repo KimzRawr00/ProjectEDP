@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjectEDP
@@ -25,19 +19,12 @@ namespace ProjectEDP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (DesignMode)
-                return;
+            txtUsername.Text = "Enter your username";
+            txtUsername.ForeColor = Color.Gray;
 
-            txtEmail.Text = "Enter your email";
-            txtEmail.ForeColor = Color.Gray;
-
+            txtPassword.UseSystemPasswordChar = false;
             txtPassword.Text = "Enter your password";
             txtPassword.ForeColor = Color.Gray;
-        }
-
-        private void labelTitle_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
@@ -47,19 +34,19 @@ namespace ProjectEDP
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "Enter your email")
+            if (txtUsername.Text == "Enter your username")
             {
-                txtEmail.Text = "";
-                txtEmail.ForeColor = Color.Black;
+                txtUsername.Text = "";
+                txtUsername.ForeColor = Color.Black;
             }
         }
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            if (txtUsername.Text == "")
             {
-                txtEmail.Text = "Enter your email";
-                txtEmail.ForeColor = Color.Gray;
+                txtUsername.Text = "Enter your username";
+                txtUsername.ForeColor = Color.Gray;
             }
         }
 
@@ -81,24 +68,25 @@ namespace ProjectEDP
                 txtPassword.Text = "Enter your password";
                 txtPassword.ForeColor = Color.Gray;
             }
-
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            FormBuyTicket buyTicketForm = new FormBuyTicket();
-            this.Hide();
-            buyTicketForm.ShowDialog();
-            this.Close();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 secondForm = new Form2();
-            secondForm.ShowDialog();
+            Form2 registerForm = new Form2();
+            registerForm.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
