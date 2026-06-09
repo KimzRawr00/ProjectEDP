@@ -31,16 +31,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panelFirstName = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.panelLastName = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.panelEmail = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.panelPassword = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panelPhoneNumber = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.panelFirstName.SuspendLayout();
             this.panelLastName.SuspendLayout();
@@ -77,7 +77,7 @@
             // panelFirstName
             // 
             this.panelFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelFirstName.Controls.Add(this.textBox1);
+            this.panelFirstName.Controls.Add(this.txtName);
             this.panelFirstName.Location = new System.Drawing.Point(22, 69);
             this.panelFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.panelFirstName.Name = "panelFirstName";
@@ -85,21 +85,22 @@
             this.panelFirstName.Size = new System.Drawing.Size(368, 37);
             this.panelFirstName.TabIndex = 2;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.textBox1.Location = new System.Drawing.Point(9, 10);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtName.Location = new System.Drawing.Point(9, 10);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(348, 20);
+            this.txtName.TabIndex = 0;
+            this.txtName.Text = "Your Name";
             // 
             // panelLastName
             // 
             this.panelLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelLastName.Controls.Add(this.textBox2);
+            this.panelLastName.Controls.Add(this.txtPhone);
             this.panelLastName.Location = new System.Drawing.Point(22, 118);
             this.panelLastName.Margin = new System.Windows.Forms.Padding(2);
             this.panelLastName.Name = "panelLastName";
@@ -107,21 +108,22 @@
             this.panelLastName.Size = new System.Drawing.Size(368, 37);
             this.panelLastName.TabIndex = 2;
             // 
-            // textBox2
+            // txtPhone
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.textBox2.Location = new System.Drawing.Point(9, 10);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 20);
-            this.textBox2.TabIndex = 0;
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtPhone.Location = new System.Drawing.Point(9, 10);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(348, 20);
+            this.txtPhone.TabIndex = 0;
+            this.txtPhone.Text = "Your Phone Number";
             // 
             // panelEmail
             // 
             this.panelEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEmail.Controls.Add(this.textBox3);
+            this.panelEmail.Controls.Add(this.txtEmail);
             this.panelEmail.Location = new System.Drawing.Point(22, 167);
             this.panelEmail.Margin = new System.Windows.Forms.Padding(2);
             this.panelEmail.Name = "panelEmail";
@@ -129,16 +131,17 @@
             this.panelEmail.Size = new System.Drawing.Size(368, 37);
             this.panelEmail.TabIndex = 2;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.textBox3.Location = new System.Drawing.Point(9, 10);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(348, 20);
-            this.textBox3.TabIndex = 0;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtEmail.Location = new System.Drawing.Point(9, 10);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(348, 20);
+            this.txtEmail.TabIndex = 0;
+            this.txtEmail.Text = "Your Email";
             // 
             // panelPassword
             // 
@@ -161,6 +164,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(348, 20);
             this.textBox4.TabIndex = 0;
+            this.textBox4.Text = "Confirm Password";
             // 
             // checkBox1
             // 
@@ -176,7 +180,7 @@
             // panelPhoneNumber
             // 
             this.panelPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPhoneNumber.Controls.Add(this.textBox5);
+            this.panelPhoneNumber.Controls.Add(this.txtPassword);
             this.panelPhoneNumber.Location = new System.Drawing.Point(22, 215);
             this.panelPhoneNumber.Margin = new System.Windows.Forms.Padding(2);
             this.panelPhoneNumber.Name = "panelPhoneNumber";
@@ -184,16 +188,17 @@
             this.panelPhoneNumber.Size = new System.Drawing.Size(368, 37);
             this.panelPhoneNumber.TabIndex = 2;
             // 
-            // textBox5
+            // txtPassword
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.textBox5.Location = new System.Drawing.Point(9, 10);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(348, 20);
-            this.textBox5.TabIndex = 0;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtPassword.Location = new System.Drawing.Point(9, 10);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(348, 20);
+            this.txtPassword.TabIndex = 0;
+            this.txtPassword.Text = "Passowrd";
             // 
             // btnCreateAccount
             // 
@@ -204,6 +209,7 @@
             this.btnCreateAccount.TabIndex = 4;
             this.btnCreateAccount.Text = "Create";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
             // 
             // Form2
             // 
@@ -246,16 +252,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panelFirstName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Panel panelLastName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Panel panelEmail;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panelPassword;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panelPhoneNumber;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnCreateAccount;
     }
 }

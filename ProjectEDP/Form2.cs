@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
-using System.Runtime.InteropServices;
 
 namespace ProjectEDP
 {
@@ -27,6 +28,39 @@ namespace ProjectEDP
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close(); 
+        }
+
+        private void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            string connStr =
+    @"Data Source=(LocalDB)\MSSQLLocalDB;
+      AttachDbFilename=|DataDirectory|\Database2.mdf;
+      Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connStr);
+
+            string query =
+            @"INSERT INTO Customer
+      (customer_name, phone_number, email, password)
+      VALUES
+      (@name,@phone,@email,@password)";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@name", txtName.Text);
+            cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
+            cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            MessageBox.Show("Account Created Successfully!");
+
+            Form1 login = new Form1();
+            login.Show();
+            this.Close();
         }
     }
 }

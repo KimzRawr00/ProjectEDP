@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,8 @@ namespace ProjectEDP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtEmail.Text = "Enter your email";
-            txtEmail.ForeColor = Color.Gray;
+            txtUsername.Text = "Enter your email";
+            txtUsername.ForeColor = Color.Gray;
 
             txtPassword.Text = "Enter your password";
             txtPassword.ForeColor = Color.Gray;
@@ -39,19 +40,19 @@ namespace ProjectEDP
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "Enter your email")
+            if (txtUsername.Text == "Enter your email")
             {
-                txtEmail.Text = "";
-                txtEmail.ForeColor = Color.Black;
+                txtUsername.Text = "";
+                txtUsername.ForeColor = Color.Black;
             }
         }
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            if (txtUsername.Text == "")
             {
-                txtEmail.Text = "Enter your email";
-                txtEmail.ForeColor = Color.Gray;
+                txtUsername.Text = "Enter your email";
+                txtUsername.ForeColor = Color.Gray;
             }
         }
 
@@ -78,10 +79,53 @@ namespace ProjectEDP
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form3 dashboardForm = new Form3();
-            this.Hide();
-            dashboardForm.ShowDialog();
-            this.Close();
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            if (username == "admin" && password == "admin123")
+            {
+                MessageBox.Show("Admin Login Success!");
+
+                FormAdmin admin = new FormAdmin();
+                admin.Show();
+                this.Hide();
+                return;
+            }
+
+            
+            string connStr =
+                @"Data Source=(LocalDB)\MSSQLLocalDB;
+           AttachDbFilename=|DataDirectory|\Database2.mdf;
+           Integrated Security=True";
+
+            SqlConnection conn = new SqlConnection(connStr);
+
+            string query =
+                "SELECT * FROM Customer WHERE customer_name=@name AND password=@pass";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            cmd.Parameters.AddWithValue("@name", username);
+            cmd.Parameters.AddWithValue("@pass", password);
+
+            conn.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
+            {
+                MessageBox.Show("User Login Success!");
+
+                FormHome home = new FormHome();
+                home.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password");
+            }
+
+            conn.Close();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -91,6 +135,11 @@ namespace ProjectEDP
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
