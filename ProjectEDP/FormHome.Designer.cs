@@ -68,7 +68,7 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Image = global::ProjectEDP.Properties.Resources.Logo;
+            this.pictureBox.Image = global::ProjectEDP.Properties.Resources._6522516;
             this.pictureBox.Location = new System.Drawing.Point(12, 12);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(109, 90);
