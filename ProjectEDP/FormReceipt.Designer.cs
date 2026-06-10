@@ -210,7 +210,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(21, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 291);
+            this.panel1.Size = new System.Drawing.Size(422, 291);
             this.panel1.TabIndex = 13;
             // 
             // label14
@@ -283,16 +283,16 @@
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(319, 83);
+            this.panel2.Location = new System.Drawing.Point(614, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 151);
+            this.panel2.Size = new System.Drawing.Size(365, 151);
             this.panel2.TabIndex = 20;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(27, 14);
+            this.label20.Location = new System.Drawing.Point(17, 40);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(80, 23);
             this.label20.TabIndex = 21;
@@ -302,7 +302,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(27, 50);
+            this.label21.Location = new System.Drawing.Point(17, 101);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(66, 23);
             this.label21.TabIndex = 22;
@@ -312,7 +312,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label22.Location = new System.Drawing.Point(146, 14);
+            this.label22.Location = new System.Drawing.Point(177, 40);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(64, 23);
             this.label22.TabIndex = 23;
@@ -322,7 +322,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.label23.Location = new System.Drawing.Point(145, 50);
+            this.label23.Location = new System.Drawing.Point(177, 101);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(64, 23);
             this.label23.TabIndex = 24;
@@ -332,7 +332,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(26, 104);
+            this.label24.Location = new System.Drawing.Point(17, 160);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(110, 23);
             this.label24.TabIndex = 25;
@@ -342,7 +342,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(158, 104);
+            this.label25.Location = new System.Drawing.Point(177, 160);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(69, 23);
             this.label25.TabIndex = 26;
@@ -358,28 +358,29 @@
             this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.label20);
-            this.panel3.Location = new System.Drawing.Point(603, 83);
+            this.panel3.Location = new System.Drawing.Point(614, 257);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(254, 151);
+            this.panel3.Size = new System.Drawing.Size(365, 218);
             this.panel3.TabIndex = 27;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(99)))), ((int)(((byte)(235)))));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(513, 323);
+            this.button1.Location = new System.Drawing.Point(805, 500);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 51);
             this.button1.TabIndex = 28;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(882, 450);
+            this.ClientSize = new System.Drawing.Size(1032, 577);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

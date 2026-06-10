@@ -49,7 +49,9 @@ namespace ProjectEDP
             receipt.label23.Text = "Paid";
             receipt.label25.Text = receiptTotalPaid;
 
+            this.Hide();
             receipt.ShowDialog();
+            this.Close();
         }
 
         private void FormPayment_Load(object sender, EventArgs e)
@@ -97,6 +99,44 @@ namespace ProjectEDP
 
                 comboBox1.SelectedIndex = 0;
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "Maybank")
+                pictureBox1.Image = Properties.Resources.Maybank;
+
+            else if (comboBox1.Text == "CIMB Bank")
+                pictureBox1.Image = Properties.Resources.CIMB;
+
+            else if (comboBox1.Text == "Public Bank")
+                pictureBox1.Image = Properties.Resources.PublicBank;
+
+            else if (comboBox1.Text == "RHB Bank")
+                pictureBox1.Image = Properties.Resources.RHB;
+
+            else if (comboBox1.Text == "Bank Islam")
+                pictureBox1.Image = Properties.Resources.BankIslam;
+
+            else if (comboBox1.Text == "Touch 'n Go")
+                pictureBox1.Image = Properties.Resources.TnG;
+
+            else if (comboBox1.Text == "GrabPay")
+                pictureBox1.Image = Properties.Resources.GrabPay;
+
+            else if (comboBox1.Text == "Boost")
+                pictureBox1.Image = Properties.Resources.Boost;
+
+            else if (comboBox1.Text == "ShopeePay")
+                pictureBox1.Image = Properties.Resources.ShopeePay;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormHome home = new FormHome();
+            this.Hide();
+            home.ShowDialog();
+            this.Close();
         }
     }
 }

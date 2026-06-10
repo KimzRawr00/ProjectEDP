@@ -191,6 +191,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BankIslam.jpg" />
     <Content Include="bin\Debug\Database2.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -200,14 +201,19 @@
     </Content>
     <Content Include="bin\Debug\ProjectEDP.exe" />
     <Content Include="bin\Debug\ProjectEDP.pdb" />
+    <Content Include="Boost.jpg" />
+    <Content Include="CIMB.jpg" />
     <Content Include="Database2.mdf" />
     <Content Include="Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <Content Include="GrabPay.jpg" />
+    <Content Include="Maybank.jpg" />
     <Content Include="obj\Debug\ProjectEDP.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ProjectEDP.exe" />
     <Content Include="obj\Debug\ProjectEDP.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="PublicBank.jpg" />
     <Content Include="Resources\Argentina.jpg" />
     <Content Include="Resources\Brazil.jpg" />
     <Content Include="Resources\England.png" />
@@ -217,6 +223,9 @@
     <Content Include="Resources\Morocco.jpg" />
     <Content Include="Resources\Spain.jpg" />
     <Content Include="Resources\Uruguay.jpg" />
+    <Content Include="RHB.jpg" />
+    <Content Include="ShopeePay.jpg" />
+    <Content Include="TnG.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
