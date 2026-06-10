@@ -80,7 +80,7 @@
             this.panelFirstName.Location = new System.Drawing.Point(29, 85);
             this.panelFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelFirstName.Name = "panelFirstName";
-            this.panelFirstName.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panelFirstName.Padding = new System.Windows.Forms.Padding(12);
             this.panelFirstName.Size = new System.Drawing.Size(490, 45);
             this.panelFirstName.TabIndex = 2;
             // 
@@ -102,7 +102,7 @@
             this.panelLastName.Location = new System.Drawing.Point(29, 145);
             this.panelLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLastName.Name = "panelLastName";
-            this.panelLastName.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panelLastName.Padding = new System.Windows.Forms.Padding(12);
             this.panelLastName.Size = new System.Drawing.Size(490, 45);
             this.panelLastName.TabIndex = 2;
             // 
@@ -124,7 +124,7 @@
             this.panelEmail.Location = new System.Drawing.Point(29, 206);
             this.panelEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEmail.Name = "panelEmail";
-            this.panelEmail.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panelEmail.Padding = new System.Windows.Forms.Padding(12);
             this.panelEmail.Size = new System.Drawing.Size(490, 45);
             this.panelEmail.TabIndex = 2;
             // 
@@ -146,7 +146,7 @@
             this.panelPassword.Location = new System.Drawing.Point(29, 326);
             this.panelPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelPassword.Name = "panelPassword";
-            this.panelPassword.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panelPassword.Padding = new System.Windows.Forms.Padding(12);
             this.panelPassword.Size = new System.Drawing.Size(490, 45);
             this.panelPassword.TabIndex = 2;
             // 
@@ -179,7 +179,7 @@
             this.panelPhoneNumber.Location = new System.Drawing.Point(29, 265);
             this.panelPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelPhoneNumber.Name = "panelPhoneNumber";
-            this.panelPhoneNumber.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.panelPhoneNumber.Padding = new System.Windows.Forms.Padding(12);
             this.panelPhoneNumber.Size = new System.Drawing.Size(490, 45);
             this.panelPhoneNumber.TabIndex = 2;
             // 
@@ -203,6 +203,7 @@
             this.btnCreateAccount.TabIndex = 4;
             this.btnCreateAccount.Text = "Create";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
+            this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click_1);
             // 
             // Form2
             // 

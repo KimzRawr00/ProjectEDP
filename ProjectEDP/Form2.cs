@@ -62,5 +62,10 @@ namespace ProjectEDP
             login.Show();
             this.Close();
         }
+
+        private void btnCreateAccount_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
