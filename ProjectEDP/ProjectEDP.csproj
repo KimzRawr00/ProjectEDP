@@ -63,11 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database2DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database2DataSet.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="Database2DataSet.Designer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,17 +82,35 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBuyTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuyTicket.Designer.cs">
+      <DependentUpon>FormBuyTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPayment.Designer.cs">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReceipt.Designer.cs">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -104,25 +118,45 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBuyTicket.resx">
+      <DependentUpon>FormBuyTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPayment.resx">
+      <DependentUpon>FormPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReceipt.resx">
+      <DependentUpon>FormReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.FormBuyTicket.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.FormPayment.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.FormReceipt.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectEDP.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\ProjectEDP.exe.config" />
     <None Include="Database2DataSet.xsc">
       <DependentUpon>Database2DataSet.xsd</DependentUpon>
     </None>
     <None Include="Database2DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database2DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Database2DataSet.xss">
       <DependentUpon>Database2DataSet.xsd</DependentUpon>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ProjectEDP.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\ProjectEDP.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ProjectEDP.csproj.GenerateResource.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -157,22 +191,44 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database2.mdf">
+    <Content Include="BankIslam.jpg" />
+    <Content Include="bin\Debug\Database2.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database2_log.ldf">
+    <Content Include="bin\Debug\Database2_log.ldf">
+      <DependentUpon>Database2.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\ProjectEDP.exe" />
+    <Content Include="bin\Debug\ProjectEDP.pdb" />
+    <Content Include="Boost.jpg" />
+    <Content Include="CIMB.jpg" />
+    <Content Include="Database2.mdf" />
+    <Content Include="Database2_log.ldf">
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\Morocco.jpg" />
-    <None Include="Resources\Uruguay.jpg" />
-    <None Include="Resources\Spain.jpg" />
-    <None Include="Resources\German.jpg" />
-    <None Include="Resources\FranceI.jpg" />
-    <None Include="Resources\England.png" />
-    <None Include="Resources\Brazil.jpg" />
-    <None Include="Resources\Argentina.jpg" />
-    <None Include="Resources\Logo.png" />
+    <Content Include="GrabPay.jpg" />
+    <Content Include="Maybank.jpg" />
+    <Content Include="obj\Debug\ProjectEDP.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProjectEDP.exe" />
+    <Content Include="obj\Debug\ProjectEDP.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="PublicBank.jpg" />
+    <Content Include="Resources\Argentina.jpg" />
+    <Content Include="Resources\Brazil.jpg" />
+    <Content Include="Resources\England.png" />
+    <Content Include="Resources\FranceI.jpg" />
+    <Content Include="Resources\German.jpg" />
+    <Content Include="Resources\Logo.png" />
+    <Content Include="Resources\Morocco.jpg" />
+    <Content Include="Resources\Spain.jpg" />
+    <Content Include="Resources\Uruguay.jpg" />
+    <Content Include="RHB.jpg" />
+    <Content Include="ShopeePay.jpg" />
+    <Content Include="TnG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
