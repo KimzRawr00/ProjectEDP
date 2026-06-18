@@ -157,6 +157,19 @@ namespace ProjectEDP
 
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormBuyTicket buyTicket = new FormBuyTicket(
+        lblStadium.Text,
+        lblMatch.Text,
+        lblDate.Text,
+        lblPrice.Text
+    );
+
+            buyTicket.Show();
+            this.Hide();
+        }
     }
     }
 
