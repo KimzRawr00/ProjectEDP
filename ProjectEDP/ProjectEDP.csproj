@@ -203,10 +203,6 @@
     <Content Include="bin\Debug\ProjectEDP.pdb" />
     <Content Include="Boost.jpg" />
     <Content Include="CIMB.jpg" />
-    <Content Include="Database2.mdf" />
-    <Content Include="Database2_log.ldf">
-      <DependentUpon>Database2.mdf</DependentUpon>
-    </Content>
     <Content Include="GrabPay.jpg" />
     <Content Include="Maybank.jpg" />
     <Content Include="obj\Debug\ProjectEDP.csproj.FileListAbsolute.txt" />

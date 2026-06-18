@@ -94,9 +94,9 @@ namespace ProjectEDP
 
 
             string connStr =
-                @"Data Source=(LocalDB)\MSSQLLocalDB;
-           AttachDbFilename=|DataDirectory|\Database2.mdf;
-           Integrated Security=True";
+    @"Data Source=(LocalDB)\MSSQLLocalDB;
+      Initial Catalog=ProjectDataBase;
+      Integrated Security=True";
 
             SqlConnection conn = new SqlConnection(connStr);
 
